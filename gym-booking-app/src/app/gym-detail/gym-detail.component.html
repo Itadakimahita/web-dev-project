@@ -1,0 +1,12 @@
+const gymDetailHtml = `
+<h2>Gym Details</h2>
+<div *ngIf="gym">
+  <input [(ngModel)]="gym.name" name="name" placeholder="Name">
+  <input [(ngModel)]="gym.address" name="address" placeholder="Address">
+  <label>
+    <input type="checkbox" [(ngModel)]="gym.is_active" name="is_active"> Active
+  </label>
+  <button (click)="updateGym()">Update</button>
+  <button (click)="deleteGym()">Delete</button>
+</div>
+`;

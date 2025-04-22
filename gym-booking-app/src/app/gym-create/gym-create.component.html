@@ -1,0 +1,11 @@
+const gymCreateHtml = `
+<h2>Create Gym</h2>
+<form>
+  <input [(ngModel)]="gym.name" name="name" placeholder="Name" required>
+  <input [(ngModel)]="gym.address" name="address" placeholder="Address" required>
+  <label>
+    <input type="checkbox" [(ngModel)]="gym.is_active" name="is_active"> Active
+  </label>
+  <button (click)="createGym()">Create</button>
+</form>
+`;

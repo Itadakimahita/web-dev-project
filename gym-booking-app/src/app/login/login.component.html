@@ -1,0 +1,10 @@
+const loginHtml = `
+<div>
+  <h2>Login</h2>
+  <form>
+    <input [(ngModel)]="username" name="username" placeholder="Username" required>
+    <input [(ngModel)]="password" name="password" type="password" placeholder="Password" required>
+    <button (click)="login()">Login</button>
+  </form>
+</div>
+`;

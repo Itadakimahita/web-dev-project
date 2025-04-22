@@ -1,0 +1,8 @@
+const gymListHtml = `
+<h2>Gym List</h2>
+<ul>
+  <li *ngFor="let gym of gyms">
+    <a [routerLink]="['/gyms', gym.id]">{{ gym.name }}</a>
+  </li>
+</ul>
+`;
