@@ -1,9 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-import { GymService } from './services/gym.service';
+import { GymService } from '../services/gym.service';
 import { Gym } from '../models/gym.model';
+import { CommonModule } from '@angular/common';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-gym-list',
+  imports: [CommonModule, RouterLink],
   templateUrl: './gym-list.component.html',
   styleUrls: ['./gym-list.component.css']
 })

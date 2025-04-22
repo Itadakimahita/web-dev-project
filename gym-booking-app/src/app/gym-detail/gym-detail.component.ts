@@ -1,10 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { GymService } from './services/gym.service';
+import { GymService } from '../services/gym.service';
 import { Gym } from '../models/gym.model';
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-gym-detail',
+  imports: [CommonModule, FormsModule],
   templateUrl: './gym-detail.component.html',
   styleUrls: ['./gym-detail.component.css']
 })
